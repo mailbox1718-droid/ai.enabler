@@ -1,0 +1,19 @@
+## The idea in one sentence
+
+An AI coding agent is a tool that can **read and change your codebase** and **run commands** to reach a goal you set.
+
+## What an agent is good at
+
+- Turning a clear goal into concrete code changes
+- Making many small edits consistently (renames, wiring pages, adding components)
+- Running tests and fixing obvious failures
+
+## What an agent is bad at (without help)
+
+- “It’s broken” with no error message or steps to reproduce
+- Vague goals (“make it better”) with no success criteria
+- Decisions that require product context you haven’t provided
+
+## A beginner-friendly workflow
+
+1. Define success criteria (what must be true when you’re done).\n+2. Let the agent implement in small steps.\n+3. Verify with lint/tests and a quick manual check.\n+4. Repeat until the success criteria are true.\n+\n+## Quick example: asking well\n+\n+Bad request:\n+\n+```text\n+Build a learning app.\n+```\n+\n+Better request:\n+\n+```text\n+Add a “Flashcards” page.\n+\n+Success criteria:\n+- It lists decks as cards\n+- Clicking a deck opens a study view\n+- Progress is visible during the session\n+- There is at least one unit test for the deck picker\n+```\n+

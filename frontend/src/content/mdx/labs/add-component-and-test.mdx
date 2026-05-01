@@ -1,0 +1,7 @@
+## Goal
+
+Create a small component, render it, and write a unit test that proves it works.
+
+## Preconditions
+
+- A Next.js app that runs locally\n+\n+## Steps\n+\n+1. Create a component `src/components/Hello.tsx` that renders a greeting.\n+2. Render it on a page.\n+3. Add a test file `src/components/Hello.test.tsx`.\n+4. Run tests:\n+\n+```bash\n+npm test\n+```\n+\n+## Success criteria\n+\n+- The component renders on the page\n+- `npm test` passes\n+- If you deliberately break the component, the test fails\n+\n+## Common mistakes\n+\n+- Testing internal function calls instead of what the user sees\n+- Forgetting jest-dom matchers (for example `toBeInTheDocument()`)\n+

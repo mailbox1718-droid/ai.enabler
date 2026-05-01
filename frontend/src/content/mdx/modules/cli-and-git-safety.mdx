@@ -1,0 +1,19 @@
+## The principle
+
+Prefer **read-only inspection commands** before commands that change state.
+
+## Safe defaults
+
+### Inspect first
+
+```bash
+pwd
+git status
+git diff
+```
+
+### Commit with intent
+
+Before committing, you should be able to answer:
+
+- What files changed?\n+- Why did they change?\n+- Do the changes match the success criteria?\n+\n+## Common footguns\n+\n+- `git reset --hard`: discards uncommitted work\n+- `git push --force`: rewrites remote history\n+- “Run this random command from the internet”: may delete or overwrite files\n+\n+If you’re not sure, stop and ask: **what will this command change?**\n+

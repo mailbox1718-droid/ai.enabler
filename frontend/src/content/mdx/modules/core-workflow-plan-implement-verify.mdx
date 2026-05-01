@@ -1,0 +1,25 @@
+## Why this workflow works
+
+Most failures happen because of **ambiguity** or **lack of verification**. A simple loop fixes both.
+
+## Plan
+
+Write down:
+
+- Objectives (what you’re trying to achieve)
+- Success criteria (what “done” means)
+- Constraints (what you must not do)
+
+## Implement
+
+Work in small steps:
+
+- Change one thing
+- Keep it shippable
+- Avoid speculative refactors
+
+## Verify
+
+Use two kinds of checks:
+
+- **Automated**: lint, unit tests, E2E tests\n+- **Manual**: “does this do what the user expects?”\n+\n+## Common failure modes\n+\n+### The scope exploded\n+\n+If you notice the task keeps growing, reduce it to the smallest deliverable that still proves the concept.\n+\n+### The agent is guessing\n+\n+If you see guesses, add constraints or examples.\n+\n+### Tests don’t catch it\n+\n+If a bug slipped through, the test suite is missing coverage for that behavior. Add a test that would have failed.\n+
